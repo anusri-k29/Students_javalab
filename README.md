@@ -17,6 +17,32 @@ This project is a **Student Management System** implemented in Java. It allows u
 ✅ Menu-driven interface for easy interaction  
 ✅ Showcases **classes, array of objects, instance members, and constructors in Java**  
 
+## Function and Method Descriptions
+
+### **Student.java**
+- **`Student(String name, int prn, String branch, String batch, float cgpa)`**: Constructor that initializes student details.
+- **`getName()` / `setName(String name)`**: Getter and setter for student name.
+- **`getPRN()` / `setPRN(int prn)`**: Getter and setter for student PRN.
+- **`getBranch()` / `setBranch(String branch)`**: Getter and setter for student branch.
+- **`getBatch()` / `setBatch(String batch)`**: Getter and setter for student batch.
+- **`getCgpa()` / `setCgpa(float cgpa)`**: Getter and setter for student CGPA.
+- **`display()`**: Prints student details.
+
+### **StudentOperations.java**
+- **`StudentOperations()`**: Constructor that initializes an empty `ArrayList` of students.
+- **`addStudent(Student student)`**: Adds a student to the list.
+- **`displayStudents()`**: Displays all students in the list.
+- **`searchByPRN(int prn)`**: Finds and displays a student by PRN.
+- **`searchByName(String name)`**: Finds and displays students with a matching name.
+- **`searchByPosition(int position)`**: Retrieves and displays a student at a specific position in the list.
+- **`updateStudent(int prn, String name, String branch, String batch, float cgpa)`**: Updates the details of a student based on PRN.
+- **`deleteStudent(int prn)`**: Deletes a student from the list based on PRN.
+
+### **Main.java**
+- **Handles user input** to interact with the system.
+- **Allows the user to perform operations** such as adding, searching, updating, and deleting student records using a menu-driven interface.
+- **Uses `Scanner` for input handling** and manages program flow.
+
 ## How to Run the Project
 1. Clone the repository:
    ```bash
@@ -42,5 +68,3 @@ SY AIML A1
 
 ## License
 This project is open-source and available under the MIT License.
-
-
